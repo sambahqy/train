@@ -1,0 +1,82 @@
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url(../img/Moon.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+.first {
+    background-image: url(/MDB-Pro-4.12/img/quyuan.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+.top-nav-collapse {
+    background-color: #245c4d !important;
+}
+
+ nav #navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+ nav #navLinks a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    padding: .5rem .75rem;
+  }
+  
+ nav #navLinks a::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #f44336;
+    margin: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+ nav #navLinks a:hover::after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    nav #navLinks a {
+      text-align: center;
+    }
+    nav #navLinks a:hover {
+      color: #f44336;
+      background-color: antiquewhite;
+    }
+  }
+  
+  @media (max-width: 768px) {
+     nav #navLinks {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -30%;
+      height: 100%;
+      width: 30%;
+      background-color: #f44336;
+      z-index: 1;
+      -webkit-transition: .7s;
+      transition: .7s;
+    }
+  }
+  

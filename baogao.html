@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>报告</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/baogao.css" />
+  <!-- Your custom styles (optional) -->
+  <script src="https://kit.fontawesome.com/fa79f509a7.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+  
+</style>
+</head>
+<body>
+
+  <header>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand green-text" href="./baogao.html">报告</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">端午节 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./MidAutumn.html">中秋节</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--/.Navbar-->
+  </header>
+  <!--Main Navigation-->
+  
+  <!--Main layout-->
+  <main>
+    <section>
+      <h1 class="mb-5 font-weight-bold text-center"  style="Margin:0">通信软件开发与应用</h1>
+       <div>
+    <pre class="text-center">学号:632007090115      姓名：何青阳</pre>     
+    </div>
+      <h3 >项目内容</h3>
+      <p style="text-indent:32.4px;" >
+          本次实验是进行网站的创建与部署。我是建立的静态网站,使用Bootstrap框架。一共写了一共五个页面,其中有端午节介绍,中秋节介绍,龙舟习俗信息，粽子习俗信息以及嫦娥传说的信息。
+          使用中秋节和端午节最后面的卡片相关信息可以跳转到相关网页上。<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          中秋节页面：先是对中秋节进行个简介(节日时间，起源于节日习俗),然后是对月亮图片进行赏析，最后是有关中秋节的相关传说，其中嫦娥奔月的传说需要进行跳转(主要是为了研究一哈网页视频的播放)；
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          端午节页面：先是对端午节进行简介(节名涵义，文化内涵，节日时间)，
+          然后就是对端午节来历进行展示，最后是对两个主要的习俗进行相关介绍，需要点击卡片跳转到另一个界面进行展示；
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          龙舟，粽子以及嫦娥奔月这几个页面是对这些信息进行展示。
+      </p>
+         <h3>
+          开发过程
+         </h3>
+         <p style="text-indent:32.4px;" >
+        进行中秋节页面的开发，先按照bootstrap的框架进行HTML的建立，然后再body中的header标签中写入导航栏样式，我从bootstrap官网中去找比较符合我审美的导航栏的样式，再对里面的一些类进行改变，变成暗色。之后就是遮罩布局，在style.css中写入样式，进行背景图片的添加，再进行遮罩布局，使用类mask;
+        在使用遮罩布局的块中加了一句标题，来显示中秋节这个名字，又用了个小标题展示诗句；
+        </p>
+        <p style="text-indent:32.4px;" >
+        然后再main标签中进行块的布局，将main标签中分成三个块。先在第一个块中使用标签和段落，再将第一个块中剩余部分进行栅栏划分，左边放图片，右边放文字。右边文字又进行栅栏划分，分成上中下三部分，具有层次感。
+      </p>
+      <p style="text-indent:32.4px;" >
+      之后就是图片赏析，即欣赏月亮的图片，其实就是点击照片放大，点击左右箭头切换图片。先利用类img-fluid让图片支持响应式布局，设置一个链接，让图片点击后进行放大。
+      </p>
+      <p style="text-indent:32.4px;" >
+        接着就是最后一个块，我是先写个标题,然后想将三个故事像资料卡片那样展示，于是去查看了bootstrap中文教程。先将剩下的空间用栅栏划分成三块，再按照卡片的写法，分别将三个故事，三张图片形成了三个卡片。只有中间那个卡片点击可以跳转页面。
+        </p>
+        <p style="text-indent:32.4px;" >
+          其他的页面写的方式与这个相差不大，不冗余赘述。不过再嫦娥奔月那个页面中我想体验在页面里播放视频，于是在里面加了个视屏播放。
+          </p>
+
+          <h3>
+            解决了的问题
+           </h3>
+           <p style="text-indent:32.4px;" >
+              问题：在进行了导航栏布局后，让导航栏固定在最上面，他会遮盖在他的范围内的页面中的元素的显示。我以为是我写错位了，结果是把我写的标题覆盖了。于是我觉得可以通过加外边距来解决这个问题。然后我就让body顶部的外边距加了60px。
+          </p>
+          <p style="text-indent:32.4px;" >
+            问题：在进行视频播放的时候无法加载youtube上的视频并且视频都是只展示一角。我于是对写视频那个块进行检查，并没有发现什么问题。后来网上一搜发现我没有把视频按照比例进行缩放，所以才只展示一角。另外我发现我对YouTube的链接引入错了，是分享后的嵌入，我点成了第二个。
+        </p>
+
+        <h3>
+          未解决的问题
+         </h3>
+         <p style="text-indent:32.4px;" >
+        问题:在写资料卡片的时候，我原本只想写两张卡片，但是按照栅栏划分成两等份，两个卡片无法对齐，我又尝试使用弹性布局将两个卡片发到两边，后来发现没有效果，我觉得是我不会使用弹性布局。我就只能通过占一个卡片的位置将两张卡片分开。
+        </p>
+
+        <h3>
+          总结
+         </h3>
+         <p style="text-indent:32.4px;" >
+          经过这一次项目的完成，让我对bootstrap框架有了更深的理解，了解到bootstrap对于html布局的划分，学会在网页中如何插入视频，也学会了一点栅栏布局，卡片，轮播等组件。
+          通过理解中文教程的布局，提高了我网页的布局思维。不过不足的是我对于bootstrap框架的了解还是在表面，我觉得对于更深层次的理解不仅仅要看官网教程，也要去了解bootstrap里面各个类的样式。
+        </p>
+    <div>
+
+    </div>
+    </section>
+  </main>
+  <!--Main layout-->
+  
+  <!--Footer-->
+  <footer>
+  
+  </footer>
+
+  <!-- End your project here-->
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+  // MDB Lightbox Init
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+
+  $("section").addClass("wow fadeIn");
+
+  $(document).ready(function () {
+    new WOW().init();
+  });
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+</script>
+</body>
+</html>
